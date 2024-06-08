@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', questionSet);
 function displayQuestion(questionObj) {
   document.getElementById(
     'question-text'
-  ).textContent = `Q. ${questionObj.question}`;
+  ).textContent = `問${count}. ${questionObj.question}`;
   const shuffledAnswers = shuffleArray([...questionObj.answers]);
 
   const buttons = document.querySelectorAll('.check');
@@ -247,6 +247,7 @@ const correctImg2 = document.querySelector('.img2');
 const correctImg3 = document.querySelector('.img3');
 const correctImg4 = document.querySelector('.img4');
 let totalPointCount = 0;
+let count = 1;
 
 document.addEventListener('click', function (event) {
   if (event.target.classList.contains('check')) {
@@ -281,6 +282,7 @@ function leStart() {
   correctImg1.classList.remove('hidden');
   correctImg2.classList.add('hidden');
   correctImg3.classList.add('hidden');
+  count += 1;
   questionSet();
 
   document.querySelector('.serif').textContent = 'うーん...';

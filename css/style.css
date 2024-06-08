@@ -19,7 +19,7 @@ header {
 .question {
   background-color: #fafafa;
   height: 230px;
-  font-size: 22px;
+  font-size: 18px;
   padding: 20px;
   width: 320px;
 }
@@ -36,7 +36,8 @@ header {
   height: 40px;
   background-color: #fafafa;
   padding-left: 20px;
-  font-size: 22px;
+  font-size: 16px;
+  width: 320px;
 }
 
 .correct,
@@ -60,8 +61,8 @@ header {
 .endCard{
   background-color: #fff;
 
-  height: 500px;
-  top: 50px;
+  height: 560px;
+  top: 0px;
 width: 320px;
   margin: 0 auto;
 }
