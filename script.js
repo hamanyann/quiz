@@ -186,6 +186,7 @@ function questionSet() {
   function showResult() {
     const endCard = document.querySelector('.endCard');
     endCard.classList.remove('hidden');
+    document.body.classList.add('z-index-change'); 
     if (totalPointCount == prefecturalCapital.length) {
       document.querySelector(
         '.endCard-serif'
